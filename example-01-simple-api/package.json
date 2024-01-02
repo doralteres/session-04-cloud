@@ -12,7 +12,8 @@
   "scripts": {
     "ui:build": "cd ui && yarn && yarn build",
     "ui:dev": "cd ui && yarn && yarn dev",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "postinstall": "yarn ui:build"
   },
   "devDependencies": {
     "prettier": "^3.1.1"
