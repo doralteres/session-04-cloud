@@ -31,6 +31,7 @@ export const products = sequelize.define("products", {
 });
 
 try {
+  console.log({ NODE_ENV, DB_HOST });
   await sequelize.authenticate();
   console.log("Connection has been established successfully.");
   await sequelize.sync();
