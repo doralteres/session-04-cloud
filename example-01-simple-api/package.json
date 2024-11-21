@@ -10,10 +10,10 @@
     "morgan": "^1.10.0"
   },
   "scripts": {
-    "ui:build": "cd ui && yarn && yarn build",
-    "ui:dev": "cd ui && yarn && yarn dev",
+    "ui:build": "cd ui && npm install && npm run build",
+    "ui:dev": "cd ui && npm install && npm run dev",
     "start": "node ./index.js",
-    "postinstall": "yarn ui:build"
+    "postinstall": "npm run ui:build"
   },
   "devDependencies": {
     "prettier": "^3.1.1"
