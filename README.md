@@ -15,6 +15,13 @@
     sudo apt install git
     ```
   - Nodejs - [source](https://nodejs.org/en/download/package-manager)
+  ```shell
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+  exit
+  nvm install 22
+  sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
+  sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
+  ```
 - clone the repo
   ```shell
   git clone https://github.com/doralteres/session-04-cloud.git

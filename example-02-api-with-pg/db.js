@@ -9,7 +9,7 @@ export const sequelize =
         host: DB_HOST,
         port: DB_PORT,
       })
-    : new Sequelize("sqlite::memory:");
+    : new Sequelize({ dialect: "sqlite", storage: ":memory:" });
 
 export const products = sequelize.define("products", {
   id: {
