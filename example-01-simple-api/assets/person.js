@@ -1,6 +1,6 @@
 const person = {
   name: "Dor Alteresku",
-  money: 1250,
+  money: 1264,
   imageUrl:
     "dor.jpeg",
 };
