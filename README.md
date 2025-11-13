@@ -16,8 +16,8 @@
     ```
   - Nodejs - [source](https://nodejs.org/en/download/package-manager)
   ```shell
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-  exit
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+  \. "$HOME/.nvm/nvm.sh"
   nvm install 22
   sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
   sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
